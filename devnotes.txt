@@ -25,3 +25,6 @@ Images
 
 Website Resources
 • the dyrt - https://thedyrt.com/
+
+Multiple HTML Pages using Webpack:
+• https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/
