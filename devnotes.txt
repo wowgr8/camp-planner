@@ -25,6 +25,7 @@ Images
 
 Website Resources
 • the dyrt - https://thedyrt.com/
+• Packtor - https://packtor.com/openList
 
 Multiple HTML Pages using Webpack:
 • https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/
