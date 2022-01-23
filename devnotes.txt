@@ -25,3 +25,11 @@ Images
 
 Website Resources
 • the dyrt - https://thedyrt.com/
+• Packtor - https://packtor.com/openList
+
+Multiple HTML Pages using Webpack:
+• https://www.ivarprudnikov.com/static-website-multiple-html-pages-using-webpack-plus-github-example/
+
+Backpacking List:
+• https://docs.google.com/spreadsheets/d/1upf-Y1FSUPHSDaaDrAXALKbqn-loovGuv_epla6sWlM/edit?usp=sharing
+• the dyrt - https://thedyrt.com/
