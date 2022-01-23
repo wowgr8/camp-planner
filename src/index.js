@@ -55,11 +55,6 @@ function displayResults(response) {
     });
   });
  });
-// import $ from 'jquery';
-// // import 'bootstrap';
-// // import 'bootstrap/dist/css/bootstrap.min.css';
-//    import './css/styles.css';
-// import ExchangeService from './js/exchange-service.js';
 
 
 //unsure if it is not working since it is not waiting till it defers prior to loading html
