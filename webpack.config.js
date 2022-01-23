@@ -19,15 +19,39 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'camp-planner',
       template: './src/index.html',
-      inject: 'body'
+      inject: 'body',
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'weather',
+      title: 'camp-planner',
+      template: './src/about.html',
+      inject: 'body',
+      filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner',
+      template: './src/gear.html',
+      inject: 'body',
+      filename: 'gear.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner',
+      template: './src/map.html',
+      inject: 'body',
+      filename: 'map.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner',
       template: './src/weather.html',
-      inject: true,
-      chunks: ['index'],
+      inject: 'body',
       filename: 'weather.html'
-    })
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner',
+      template: './src/meals.html',
+      inject: 'body',
+      filename: 'meals.html'
+    }),
   ],
   module: { 
     rules: [

@@ -4,61 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <title>Outdoor Planner</title>
 </head>
 
 <body>
   
   <nav class="navbar">
     <div class="logo_header">
-      <a href="weather.html" class="logo">Camp Planner</a>
-      <button class="navbar_toggle">
-        <i class="fas fa-bars"></i>
-      </button>
+      <a href="./index.html" class="logo">CAMPY</a>
+      <!-- <button class="navbar_toggle"> -->
+        <!-- <i class="fas fa-bars"></i>
+      </button> -->
     </div>
 
     <ul class="main_nav">
       <li>
-        <a href="#" class="nav_links">Home</a>
+        <a href="./gear.html" class="nav_links">Gear</a>
       </li>
       <li>
-        <a href="weather.html" class="nav_links">Weather</a>
+        <a href="./weather.html" class="nav_links">Weather</a>
       </li>
       <li>
-        <a href="#" class="nav_links">Parks</a>
+        <a href="./map.html" class="nav_links">Map</a>
       </li>
       <li>
-        <a href="#" class="nav_links">Map</a>
+        <a href="./meals.html" class="nav_links">Meals</a>
       </li>
       <li>
-        <a href="#" class="nav_links">Lists</a>
+        <a href="./about.html" class="nav_links">About</a>
       </li>
     </ul>
       
   </nav>
-    
   <div class="row">
     <div class="column1">
       <div class="card">
-        <h1>Left Column Header</h1>
+        <h1>Type of the Camping</h1>
         <br>
-        <div class="forecast">
-          <ul class="forecast-list">
+
+        <ul class="tabs">
+          <li data-tab-target="#Backpacking" class="active tab">Backpacking</li>
+          <li data-tab-target="#Canoeing" class="tab">Canoeing</li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="Backpacking" data-tab-content class="active">
+            <h1>Backpacking</h1>
+            <ul class="tabs">
+              <li data-tab-target="# Clothing" class="active tab">clothing</li>
+              <div class="container">
+                <p class="draggable" draggable="true">tent</p>
+                <p class="draggable" draggable="true">tarp</p>
+              </div>
+              <li data-tab-target="#extra" class="tab">Extra</li>
+              <div class="container">
+                <p class="draggable" draggable="true">tent</p>
+                <p class="draggable" draggable="true">tarp</p>
+              </div>
             </ul>
-          <div class="today"></div>
           </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima exercitationem dolore excepturi, doloremque inventore illo, saepe quasi commodi perferendis est sunt. Expedita non, maxime quibusdam deleniti itaque accusamus iusto?</p>
-        <br>
+        </div>
+
+        <div class="tab-content">
+          <div id="Canoeing" data-tab-content class="active">
+            <h1>Canoeing</h1>
+            <ul class="tabs">
+              <li data-tab-target="# Clothing" class="active tab">clothing</li>
+                <div class="container">
+                  <p class="draggable" draggable="true">clothing</p>
+                  <p class="draggable" draggable="true">shoes</p>
+                </div>
+              <li data-tab-target="#food" class="tab">food</li>
+                <div class="container">
+                  <p class="draggable" draggable="true">water</p>
+                  <p class="draggable" draggable="true">snack</p>
+                </div>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+   </div>
+
     <div class="column2">
       <div class="card">
-        <h1>Right Column Header</h1>
-        <div class="map">
-          
-        </div>
+        <h1>Let Us Get Ready!</h1> 
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptas rerum similique consequatur in praesentium asperiores repudiandae enim, eum corrupti quibusdam aliquid fuga fugiat? Quam ipsa architecto nemo saepe consequatur.</p>
+        <div class="container">
+            <ul class ="draggable" draggable ="true">
+              <li>beer</li>
+              <li> wine</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
         <br>
       </div>
     </div>

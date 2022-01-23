@@ -3,6 +3,16 @@
   font-family: National Park Regular;
 }
 
+@font-face {
+  src: url(../assets/fonts/NationalPark-Outline.otf);
+  font-family: National Park Outline;
+}
+
+@font-face {
+  src: url(../assets/fonts/Wooden-Log.ttf);
+  font-family: Wooden Log;
+}
+
 /* .header1 {
   padding-top: 6%;
   padding-bottom: 10%;
@@ -12,9 +22,26 @@
 /* Float two columns side by side */
 .column1 {
   float: left;
-  width: 45%;
+  width: 45%; 
   padding: 0 10px;
   margin-left: 3%;
+}
+
+.container {
+  background-color: rgb(235, 16, 16);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: rgb(104, 231, 54);
+  border: 1px solid black;
+  cursor: move;
+}
+/* provides ghost like effect */
+.draggable.dragging {
+  opacity: .5;
 }
 
 .column2 {
@@ -59,11 +86,10 @@ body {
   background-size: cover;
 }
 
-body, html {
-  /* height: 100%; */
-}
+/* body, html {
+  /* height: 100%; }*/
 
-.parallax {
+/*.parallax {
   /* The image used */
   /* background-image: url("../assets/images/cabin_001.jpg"); */
 
@@ -75,8 +101,8 @@ body, html {
   /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-}
+  background-size: cover;} */
+
 
 *{
   margin: 0;
@@ -128,4 +154,45 @@ a{
 }
 .main_nav li a{
   color: #ffffff;
+}
+
+/* styling for tabs ; this hides it all*/
+[data-tab-content] {
+  display: none;
+}
+/* active class will be visiable */
+.active[data-tab-content] {
+  display: block;
+}
+
+/* body {
+  padding: 0;
+  margin: 0;
+} */
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
