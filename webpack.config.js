@@ -26,6 +26,18 @@ module.exports = {
       template: './src/weather.html',
       filename: 'weather.html',
       inject: 'weather-tab'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner-weather',
+      template: './src/map.html',
+      filename: 'map.html',
+      inject: 'map-tab'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'camp-planner-weather',
+      template: './src/parks.html',
+      filename: 'parks.html',
+      inject: 'parks-tab'
     })
   ],
   module: { 
