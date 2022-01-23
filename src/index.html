@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <title>Outdoor Planner</title>
 </head>
 
 <body>
@@ -17,82 +17,91 @@
       </button> -->
     </div>
 
-    <!-- <div class="navbar"> -->
-      <ul class="main_nav">
-        <!-- <li>
-          <a href="./index.html" class="nav_links">Home</a>
-        </li> -->
-        <li>
-          <a href="./gear.html" class="nav_links">Gear</a>
-        </li>
-        <li>
-          <a href="./weather.html" class="nav_links">Weather</a>
-        </li>
-        <li>
-          <a href="./map.html" class="nav_links">Map</a>
-        </li>
-        <li>
-          <a href="./meals.html" class="nav_links">Meals</a>
-        </li>
-        <li>
-          <a href="./about.html" class="nav_links">About</a>
-        </li>
-      </ul>
-    <!-- </div> -->
+    <ul class="main_nav">
+      <li>
+        <a href="./gear.html" class="nav_links">Gear</a>
+      </li>
+      <li>
+        <a href="./weather.html" class="nav_links">Weather</a>
+      </li>
+      <li>
+        <a href="./map.html" class="nav_links">Map</a>
+      </li>
+      <li>
+        <a href="./meals.html" class="nav_links">Meals</a>
+      </li>
+      <li>
+        <a href="./about.html" class="nav_links">About</a>
+      </li>
+    </ul>
       
   </nav>
-    
-  <!-- <div class="welcome">
-    <h1>CAMP PLANNER</h1>
-  </div> -->
+  <div class="row">
+    <div class="column1">
+      <div class="card">
+        <h1>Type of the Camping</h1>
+        <br>
 
+        <ul class="tabs">
+          <li data-tab-target="#Backpacking" class="active tab">Backpacking</li>
+          <li data-tab-target="#Canoeing" class="tab">Canoeing</li>
+        </ul>
 
-  <!-- <div class="plantrip">
-    <div class="row">
-      <div class="column1">
-        <div class="card">
-          <h1>Choose Your Camping Adventure</h1>
-          <br>
-          <div class="row">
-            <div class="column">
-              <img src="./assets/emojis/backpack.png" alt="backpack emoji" height="70" style="vertical-align:middle" id="emoji">
-              <img src="./assets/emojis/canoe.png" alt="canoe emoji" height="90" style="vertical-align:middle" id="emoji">
-              <img src="./assets/emojis/camper.png" alt="camper trailer emoji" height="80" style="vertical-align:middle" id="emoji">
-              <img src="./assets/emojis/cabin.png" alt="log cabin emoji" height="100" style="vertical-align:middle" id="emoji">
-            </div>
+        <div class="tab-content">
+          <div id="Backpacking" data-tab-content class="active">
+            <h1>Backpacking</h1>
+            <ul class="tabs">
+              <li data-tab-target="# Clothing" class="active tab">clothing</li>
+              <div class="container">
+                <p class="draggable" draggable="true">tent</p>
+                <p class="draggable" draggable="true">tarp</p>
+              </div>
+              <li data-tab-target="#extra" class="tab">Extra</li>
+              <div class="container">
+                <p class="draggable" draggable="true">tent</p>
+                <p class="draggable" draggable="true">tarp</p>
+              </div>
+            </ul>
           </div>
-          <hr>
-          <br>
-          <br>
-          <h1>Select The Season</h1>
-          <br>
-          <div class="row">
-            <div class="column">
-                <img src="./assets/emojis/winter.png" alt="backpack emoji" height="70" style="vertical-align:middle" id="emoji">
-                <img src="./assets/emojis/spring.png" alt="canoe emoji" height="70" style="vertical-align:middle" id="emoji">
-                <img src="./assets/emojis/summer.png" alt="camper trailer emoji" height="70" style="vertical-align:middle" id="emoji">
-                <img src="./assets/emojis/fall.png" alt="log cabin emoji" height="70" style="vertical-align:middle" id="emoji">
-            </div>
+        </div>
+
+        <div class="tab-content">
+          <div id="Canoeing" data-tab-content class="active">
+            <h1>Canoeing</h1>
+            <ul class="tabs">
+              <li data-tab-target="# Clothing" class="active tab">clothing</li>
+                <div class="container">
+                  <p class="draggable" draggable="true">clothing</p>
+                  <p class="draggable" draggable="true">shoes</p>
+                </div>
+              <li data-tab-target="#food" class="tab">food</li>
+                <div class="container">
+                  <p class="draggable" draggable="true">water</p>
+                  <p class="draggable" draggable="true">snack</p>
+                </div>
+            </ul>
           </div>
-          <br>
-          <br>
-          <hr>
-          <br>
-          <br>
-          <h1>How Many In Your Party</h1>
-          <br>
         </div>
       </div>
-      <div class="column2">
-        <div class="card">
-          <h1>Here Is Your Gear List</h1> 
-          <br>
-          <p>Of course, feel free to add and omit as you like.</p>
-          <br>
+   </div>
+
+    <div class="column2">
+      <div class="card">
+        <h1>Let Us Get Ready!</h1> 
+        <br>
+        <div class="container">
+            <ul class ="draggable" draggable ="true">
+              <li>beer</li>
+              <li> wine</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+        <br>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </body>
 </html>
