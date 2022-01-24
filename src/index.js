@@ -49,13 +49,13 @@ $(document).ready(function() {
         console.log("This is the lat: " + lat + " lon: " + lon);
         //This seems like a bad idea to call another service from w/in weather service, but here we are!
         MapService.getMap(lat,lon)
-        .then(function(mapResponse) {
-          $(".map").html(`<img src="${mapResponse}" class="img-fluid">`);
-        });
+          .then(function(mapResponse) {
+            $(".map").html(`<img src="${mapResponse}" class="img-fluid">`);
+          });
       });
-    });
   });
 });
+
 
 
 //unsure if it is not working since it is not waiting till it defers prior to loading html
