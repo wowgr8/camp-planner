@@ -1,11 +1,11 @@
- import $ from 'jquery';
- import 'bootstrap';
- import 'bootstrap/dist/css/bootstrap.min.css';
- import './css/styles.css';
- import WeatherService from './weather-service.js';
- import MapService from './map-service.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import WeatherService from './weather-service.js';
+import MapService from './map-service.js';
 
- function forecastByDay(response) {
+function forecastByDay(response) {
   let forcastDateAndTime = "";
  // let dateArray = [];
  // let dateArrayNice;
@@ -22,7 +22,7 @@
     //console.log(dateToForecastNice + response.list[i].main.temp_min);
   }
   //forcastDateAndTime += `<li>${dateArrayNice}</li>`;
-  $('.forecast-list').html(forcastDateAndTime);
+  $('.showForcast').html(forcastDateAndTime);
   //console.log(dateArrayNice);
   return 0;
 }
@@ -37,7 +37,7 @@ function displayResults(response) {
 }
 
 $(document).ready(function() {
-  $('.main_nav').click(function(event) {
+  $('.navbar').click(function(event) {
     event.preventDefault();
     let lat, lon;
 
