@@ -9,7 +9,7 @@ export default class WeatherService {
   //static getWeatherForecast(zipcode){}
   static getWeatherForecast() {
     //Note: It could be zipcode or city/state etc, but city state seems more reliable. Fetch below just for testing with Portland,Oregon
-    return fetch(`http://api.openweathermap.org/data/2.5/forecast?appid=${process.env.API_KEY_WEATHER}&q=97206&country=US&units=imperial`)
+    return fetch(`http://api.openweathermap.org/data/2.5/forecast?appid=${process.env.API_KEY_WEATHER}&q=portland,oregon&units=imperial`)
     //return fetch(`/api.openweathermap.org/data/2.5/forecast?appid=${process.env.API_KEY}&q=${zipcode}`)
       .then(function(response) {
         if (!response.ok) {
