@@ -35,9 +35,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'camp-planner-weather',
-      template: './src/parks.html',
-      filename: 'parks.html',
-      inject: 'parks-tab'
+      template: './src/gear.html',
+      filename: 'gear.html',
+      inject: 'gear-tab'
     })
   ],
   module: { 
