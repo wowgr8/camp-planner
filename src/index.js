@@ -1,9 +1,9 @@
- import $ from 'jquery';
- import 'bootstrap';
- import 'bootstrap/dist/css/bootstrap.min.css';
- import './css/styles.css';
- import WeatherService from './weather-service.js';
- import MapService from './map-service.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import WeatherService from './weather-service.js';
+import MapService from './map-service.js';
 
  function forecastByDay(response) {
   let forcastDateAndTime = "";
@@ -42,19 +42,19 @@ function displayResults(response) {
     let lat, lon;
 
     WeatherService.getWeatherForecast()
-    .then(function(response) {
-      displayResults(response);
-      lat = response.city.coord.lat;
-      lon = response.city.coord.lon;
-      console.log("This is the lat: " + lat + " lon: " + lon);
-      //This seems like a bad idea to call another service from w/in weather service, but here we are!
-      MapService.getMap(lat,lon)
-      .then(function(mapResponse) {
-        $(".map").html(`<img src="${mapResponse}" class="img-fluid">`);
+      .then(function(response) {
+        displayResults(response);
+        lat = response.city.coord.lat;
+        lon = response.city.coord.lon;
+        console.log("This is the lat: " + lat + " lon: " + lon);
+        //This seems like a bad idea to call another service from w/in weather service, but here we are!
+        MapService.getMap(lat,lon)
+        .then(function(mapResponse) {
+          $(".map").html(`<img src="${mapResponse}" class="img-fluid">`);
+        });
       });
     });
   });
- });
 
 
 //unsure if it is not working since it is not waiting till it defers prior to loading html
