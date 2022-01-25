@@ -13,16 +13,17 @@
   font-family: Wooden Log;
 }
 
-h1{
+h1 {
   font-family: "National Park Regular";
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: lighter;
 }
 
-h2{
+h2 {
   font-family: "Wooden Log";
   margin-top: 2%;
   margin-left: 5%;
@@ -32,11 +33,38 @@ h2{
   font-weight: lighter;
 }
 
-h3{
+h3 {
   font-family: "National Park Regular";
   margin-left: 5%;
   margin-right: 5%;
   color: #9b9a9a;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+h4 {
+  font-family: "National Park Regular";
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-size: 37px;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: "National Park Regular";
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h6 {
+  font-family: "National Park Regular";
+  margin-left: 5%;
+  margin-right: 5%;
+  color: rgb(255, 203, 143);
   font-size: 30px;
   font-weight: lighter;
 }
@@ -50,9 +78,16 @@ h3{
 /* Float two columns side by side */
 .column1 {
   float: left;
-  width: 45%; 
+  width: 45%;
   padding: 0 10px;
   margin-left: 3%;
+}
+
+.column2 {
+  float: right;
+  width: 45%;
+  padding: 0 10px;
+  margin-right: 3%;
 }
 
 .container {
@@ -69,32 +104,83 @@ h3{
 }
 /* provides ghost like effect */
 .draggable.dragging {
-  opacity: .5;
-}
-
-.column2 {
-  float: right;
-  width: 45%;
-  padding: 0 10px;
-  margin-right: 3%;
+  opacity: 0.5;
 }
 
 .about {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
-  width: 60%;
+  float: left;
+  width: 18%;
+  padding: 0 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 5%;
+  /* margin-bottom: 10px; */
 }
 
 .meal {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
-  width: 60%;
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+  margin-left: 4%;
+  margin-top: 5%;
+  /* margin: 0 auto; */
+}
+
+.drink {
+  float: right;
+  width: 45%;
+  padding: 0 10px;
+  margin-right: 4%;
+  margin-top: 5%;
+  /* margin: 0 auto; */
+}
+
+#search {
+  margin-left: 5%;
+}
+
+#imageToShow {
+  max-width: 90%;
+  float: right;
+  padding-right: 15px;
+}
+
+#drinkImageToShow {
+  max-width: 90%;
+  float: right;
+  padding-right: 15px;
+}
+
+.showName {
+  font-size: 70px;
+}
+
+.showDrinkName {
+  font-size: 70px;
+}
+
+.showCategory {
+  font-size: 20px;
+}
+
+.showArea {
+  font-size: 30px;
+}
+
+#ingredients {
+  margin-left: 2%;
+  text-align: left;
+}
+
+#measurements {
+  margin-left: 2%;
+  text-align: left;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -120,7 +206,7 @@ h3{
 } */
 
 body {
-  background-image: url("../assets/images/camp_001.jpg");
+  background-image: url("../assets/images/camp_001_rev.jpg");
   width: auto;
   background-attachment: fixed;
   background-position: center;
@@ -133,69 +219,75 @@ body {
 
 /*.parallax {
   /* The image used */
-  /* background-image: url("../assets/images/cabin_001.jpg"); */
+/* background-image: url("../assets/images/cabin_001.jpg"); */
 
-  /* Full height */
+/* Full height */
 
+/* Create the parallax scrolling effect */
 
-  /* Create the parallax scrolling effect */
-
-  /* background-attachment: fixed;
+/* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;} */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.navbar{
+/* .navbar {
   display: flex;
   justify-content: space-between;
   width: 100vw;
   padding-top: 2%;
   padding-bottom: 2%;
   font-size: 20px;
-}
+} */
 
-.logo{
+.logo {
   font-family: "Wooden Log";
   margin-left: 4%;
   color: #ffffff;
   font-size: 90px;
 }
 
-.logo_header{
+/* .logo_header {
   display: flex;
   margin-left: 5%;
+} */
+
+.logo:hover {
+  color: white;
+  text-shadow: 2px 2px 12px rgb(0, 190, 248);
 }
 
-.main_nav{
-  display: flex;
+.nav_links {
+  /* display: flex; */
   font-family: "National Park Regular";
-  font-size: 20px;
-  width: 35%;
-  float: right;
-  margin-right: 5%;
+  font-size: 30px;
+  color: rgb(255, 203, 143);
+  /* width: 20%; */
+  /* float: right; */
+  margin-right: 3%;
+  margin-left: 3%;
   justify-content: space-between;
-  list-style: none;
+  /* list-style: none; */
 }
 
-.main_nav li:hover{
+.nav_links:hover {
+  color: rgb(0, 190, 248);
   text-shadow: 2px 2px 12px rgb(253, 159, 51);
 }
 
-.main_nav li{
+.main_nav li {
   display: inline;
   color: #ffffff;
 }
-.main_nav li a{
+.nav_links li a {
   color: #ffffff;
 }
 
@@ -228,11 +320,11 @@ a{
 }
 
 .tab.active {
-  background-color: #CCC;
+  background-color: #ccc;
 }
 
 .tab:hover {
-  background-color: #AAA;
+  background-color: #aaa;
 }
 
 .tab-content {
@@ -240,26 +332,89 @@ a{
   margin-right: 20px;
 }
 
+/* ----------------Wajma new changes---------------- */
+.tabstabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  font-family: sans-serif;
+}
+
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  width: 100%;
+  border-bottom: 3px solid #dddddd;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  color: #009578;
+  border-bottom: 2px solid #009578;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content { 
+  display: initial;
+}
+
+/* ----------------Wajma new changes---------------- */
+
 #icon {
-  margin: 3%;
+  margin: 1%;
   margin-bottom: 5%;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: rgba(253, 159, 51, 0.1);
+  background-color: rgba(0, 190, 248, 0.226);
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px rgba(153, 153, 153, 0.25);
 }
 
 #icon:hover {
-  background-color: rgb(253, 159, 51)
+  background-color: orange;
 }
 
 #icon:active {
   background-color: rgb(204, 109, 0);
   box-shadow: 0 5px rgba(102, 102, 102, 0.6);
   transform: translateY(4px);
+}
+
+.btn-info {
+  color: white;
+  width: 70px;
+  background-color: rgba(0, 190, 248, 0.432);
+  border-radius: 15px;
+  border-color: orange;
+  box-shadow: 0 4px rgba(153, 153, 153, 0.25);
+}
+
+.btn-info:hover {
+  color: white;
+  background-color: orange;
+}
+
+.btn-info:active {
+  background-color: rgb(204, 109, 0);
+  box-shadow: 0 1px rgba(102, 102, 102, 0.6);
+  transform: translateY(4px);
+}
+
+#emoji{
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
 }

@@ -6,49 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
 </head>
-
 <body>
-  
-  <nav class="navbar">
-    <div class="logo_header">
-      <a href="./index.html" class="logo">CAMPY</a>
-    </div>
-
-    <ul class="navbar">
-        <li>
-          <a href="./gear.html" class="nav_links">Gear</a>
-        </li>
-        <li>
-          <a href="./weather.html" class="nav_links">Weather</a>
-        </li>
-        <li>
-          <a href="./map.html" class="nav_links">Map</a>
-        </li>
-        <li>
-          <a href="./meals.html" class="nav_links">Meals</a>
-        </li>
-        <li>
-          <a href="./about.html" class="nav_links">About</a>
-        </li>
-      </ul>
-      
-  </nav>
-    
-  <!-- <div class="welcome">
-    <h1>CAMP PLANNER</h1>
-  </div> -->
-
-
-    <div class="row">
+  <a href="./index.html" class="logo">CAMPY</a>
+  <a href="./gear.html" class="nav_links">GEAR</a>
+  <a href="./weather.html" class="nav_links">WEATHER</a>
+  <a href="./map.html" class="nav_links">MAP</a>
+  <a href="./meals.html" class="nav_links">MEALS</a>
+  <a href="./about.html" class="nav_links">ABOUT</a>  
+  <h1>SEARCH FOR DELICIOUS RECIPES</h1>
+  <div class="row">
+    <div class="column">
       <div class="meal">
         <div class="card">
-          <h1>Search Meal Recipes</h1>
-          <h1>Select Cocktail Recipes</h1>
+          <h1>MEAL RECIPES</h1>
           <br>
+          <div class="col-md-6">
+            <input id="search1" type="text" placeholder=" ex: Pancakes">
+            <button class="btn-info" id="mealSearch">YUM!</button>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <br>
+            <br>
+            <h1><div class="showName"></div></h1>
+            <div class="col-sm-6">
+            <div class="showPhoto"></div>
+            <div class="showimage">
+              <img id="imageToShow">
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div id="ingredients" class="col-md-5">
+                  <div class="showIngredient1"></div>
+                  <div class="showIngredient2"></div>
+                  <div class="showIngredient3"></div>
+                  <div class="showIngredient4"></div>
+                  <div class="showIngredient5"></div>
+                  <div class="showIngredient6"></div>
+                  <div class="showIngredient7"></div>
+                  <div class="showIngredient8"></div>
+                  <div class="showIngredient9"></div>
+                  <div class="showIngredient10"></div>
+                  <div class="showIngredient11"></div>
+                  <div class="showIngredient12"></div>
+                  <div class="showIngredient13"></div>
+                  <div class="showIngredient14"></div>
+                  <div class="showIngredient15"></div>
+                  <div class="showIngredient16"></div>
+                  <div class="showIngredient17"></div>
+                  <div class="showIngredient18"></div>
+                  <div class="showIngredient19"></div>
+                  <div class="showIngredient20"></div>
+                </div>
+                <div id="measurements" class="col-md-5">
+                  <div class="showMeasurement1"></div>
+                  <div class="showMeasurement2"></div>
+                  <div class="showMeasurement3"></div>
+                  <div class="showMeasurement4"></div>
+                  <div class="showMeasurement5"></div>
+                  <div class="showMeasurement6"></div>
+                  <div class="showMeasurement7"></div>
+                  <div class="showMeasurement8"></div>
+                  <div class="showMeasurement9"></div>
+                  <div class="showMeasurement10"></div>
+                  <div class="showMeasurement11"></div>
+                  <div class="showMeasurement12"></div>
+                  <div class="showMeasurement13"></div>
+                  <div class="showMeasurement14"></div>
+                  <div class="showMeasurement15"></div>
+                  <div class="showMeasurement16"></div>
+                  <div class="showMeasurement17"></div>
+                  <div class="showMeasurement18"></div>
+                  <div class="showMeasurement19"></div>
+                  <div class="showMeasurement20"></div>
+                </div>
+              </div>  
+              <br>
+              <br>
+            </div>
+            <br>
+            <div class="showInstructions"></div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="drink">
+        <div class="card">
+          <h1>COCKTAIL RECIPES</h1>
+          <br>
+          <div class="col-md-6">
+            <input id="search2" type="text" placeholder=" ex: Bloody Mary">
+            <button class="btn-info" id="drinkSearch">YUM!</button>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <br>
+            <br>
+            <h1><div class="showDrinkName"></div></h1>
+            <div class="col-sm-6">
+            <div class="showDrinkPhoto"></div>
+            <div class="showDrinkImage">
+              <img id="drinkImageToShow">
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div id="ingredients" class="col-md-5">
+                  <div class="showDrinkIngredient1"></div>
+                  <div class="showDrinkIngredient2"></div>
+                  <div class="showDrinkIngredient3"></div>
+                  <div class="showDrinkIngredient4"></div>
+                  <div class="showDrinkIngredient5"></div>
+                  <div class="showDrinkIngredient6"></div>
+                </div>
+                <div id="measurements" class="col-md-5">
+                  <div class="showDrinkMeasurement1"></div>
+                  <div class="showDrinkMeasurement2"></div>
+                  <div class="showDrinkMeasurement3"></div>
+                  <div class="showDrinkMeasurement4"></div>
+                  <div class="showDrinkMeasurement5"></div>
+                  <div class="showDrinkMeasurement6"></div>
+                </div>
+              </div>
+              <br>
+              <br>
+            </div>  
+            <br>
+            <div class="showDrinkInstructions"></div>
+            <br>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>
