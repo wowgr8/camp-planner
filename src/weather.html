@@ -8,36 +8,29 @@
 </head>
 
 <body>
-  
   <a href="./index.html" class="logo">CAMPY</a>
   <a href="./gear.html" class="nav_links">GEAR</a>
   <a href="./weather.html" class="nav_links">WEATHER & MAP</a>
   <!-- <a href="./map.html" class="nav_links">MAP</a> -->
   <a href="./meals.html" class="nav_links">MEALS</a>
   <a href="./about.html" class="nav_links">ABOUT</a>
-
   <div class="header">
     <h1>Weather Forecast & Maps</h1>
-    <div class="welcome">
-      <form id="location">
+      <form class="welcome" id="location">
         <label for="zipcode">Enter your destinations city and state:</label><br>
         <input id="zipcode" type="text" style="width: 300px;"  placeholder="        ex : Portland, Oregon">
-        <button type="submit" class="btn-success" style="width: 300px;" id="forcastLocation">Get Forecast</button>
+        <button type="submit" class="btn-info" style="width: 200px;" id="forcastLocation">Get Forecast</button>
       </form>
-    </div>
   </div>
-
   <div class="row">
     <div class="column1">
       <div class="form-group">
           <div class="card">
             <h1>Weather Forecast</h1>
             <ul class="showForcast"></ul>
-          </div>
-        
+          </div>       
       </div>
     </div>
-
     <div class="column2">
       <div class="column-map">
         <div class="card">
@@ -48,6 +41,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>
