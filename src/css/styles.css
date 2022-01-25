@@ -1,5 +1,5 @@
 @font-face {
-  src: url(../assets/fonts/Wooden-Log.ttf);
+  src: url(../assets/fonts/NationalPark-Regular.otf);
   font-family: National Park Regular;
 }
 
@@ -14,9 +14,10 @@
 }
 
 h1 {
-  font-family: "National Park Regular";
+  font-family: "Wooden Log";
   margin: auto;
   margin-top: 4%;
+  margin-bottom: 4%;
   text-align: center;
   color: #ffffff;
   font-size: 60px;
@@ -43,7 +44,7 @@ h3 {
 }
 
 h4 {
-  font-family: "National Park Regular";
+  font-family: "Wooden Log";
   margin-left: 5%;
   margin-right: 5%;
   color: white;
@@ -52,7 +53,7 @@ h4 {
 }
 
 h5 {
-  font-family: "National Park Regular";
+  font-family: "Wooden Log";
   margin-left: 5%;
   margin-right: 5%;
   color: white;
@@ -61,7 +62,7 @@ h5 {
 }
 
 h6 {
-  font-family: "National Park Regular";
+  font-family: "Wooden Log";
   margin-left: 5%;
   margin-right: 5%;
   color: rgb(255, 203, 143);
@@ -81,6 +82,9 @@ h6 {
   width: 45%;
   padding: 0 10px;
   margin-left: 3%;
+  font-family: "National Park Regular";
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .column2 {
@@ -88,18 +92,32 @@ h6 {
   width: 45%;
   padding: 0 10px;
   margin-right: 3%;
+  font-family: "National Park Regular";
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .container {
-  background-color: rgb(235, 16, 16);
+  background-color: rgba(0, 190, 248, 0.301);
+  border-radius: 25px;
   padding: 1rem;
   margin-top: 1rem;
+  font-family: "National Park Regular";
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .draggable {
   padding: 1rem;
-  background-color: rgb(104, 231, 54);
-  border: 1px solid black;
+  border: 5px solid orange;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  font-family: "National Park Regular";
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
   cursor: move;
 }
 /* provides ghost like effect */
@@ -113,7 +131,7 @@ h6 {
   padding: 0 10px;
   margin-left: 1%;
   margin-right: 1%;
-  margin-top: 5%;
+  margin-top: 1%;
   /* margin-bottom: 10px; */
 }
 
@@ -122,7 +140,7 @@ h6 {
   width: 45%;
   padding: 0 10px;
   margin-left: 4%;
-  margin-top: 5%;
+  margin-top: 1%;
   /* margin: 0 auto; */
 }
 
@@ -131,7 +149,7 @@ h6 {
   width: 45%;
   padding: 0 10px;
   margin-right: 4%;
-  margin-top: 5%;
+  margin-top: 1%;
   /* margin: 0 auto; */
 }
 
@@ -251,6 +269,7 @@ a {
 .logo {
   font-family: "Wooden Log";
   margin-left: 4%;
+  margin-right: 5%;
   color: #ffffff;
   font-size: 90px;
 }
@@ -267,7 +286,7 @@ a {
 
 .nav_links {
   /* display: flex; */
-  font-family: "National Park Regular";
+  font-family: "Wooden Log";
   font-size: 30px;
   color: rgb(255, 203, 143);
   /* width: 20%; */
@@ -317,14 +336,16 @@ a {
 .tab {
   cursor: pointer;
   padding: 10px;
+  border-radius: 25px;
 }
 
 .tab.active {
-  background-color: #ccc;
+  background-color: rgb(0, 190, 248);;
 }
 
 .tab:hover {
-  background-color: #aaa;
+  background-color: rgb(253, 159, 51);
+  border-radius: 25px;
 }
 
 .tab-content {
@@ -360,8 +381,8 @@ a {
 
 .tabs__radio:checked + .tabs__label {
   font-weight: bold;
-  color: #009578;
-  border-bottom: 2px solid #009578;
+  color: rgb(0, 190, 248);
+  border-bottom: 2px solid rgb(0, 190, 248);;
 }
 
 .tabs__radio:checked + .tabs__label + .tabs__content { 
