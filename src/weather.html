@@ -16,39 +16,38 @@
   <a href="./meals.html" class="nav_links">MEALS</a>
   <a href="./about.html" class="nav_links">ABOUT</a>
 
-    
-  <div class="welcome">
-    <h1>Forecast</h1>
+  <div class="header">
+    <h1>Weather Forecast & Maps</h1>
+    <div class="welcome">
+      <form id="location">
+        <label for="zipcode">Enter your destinations city and state:</label><br>
+        <input id="zipcode" type="text" style="width: 300px;"  placeholder="        ex : Portland, Oregon">
+        <button type="submit" class="btn-success" style="width: 300px;" id="forcastLocation">Get Forecast</button>
+      </form>
+    </div>
   </div>
 
-<div class="row">
-
-  <div class="column1">
-    <form id="location">
+  <div class="row">
+    <div class="column1">
       <div class="form-group">
-        <div class="container">
           <div class="card">
-            <h1>Where are you going?</h1>
-            <label for="zipcode">Enter your destinations city and state:</label>
-            <input id="zipcode" type="text" placeholder=" ex : Portland, Oregon">
-            <button type="submit" class="btn-success" id="forcastLocation">Get Forcast!</button>
+            <h1>Weather Forecast</h1>
             <ul class="showForcast"></ul>
           </div>
-        </div>
+        
+      </div>
     </div>
-    </form>
-  </div>
 
-  <div class="column2">
-    <div class="column-map">
-      <div class="card">
-        <h1>Map Time</h1>
-        <div class="map"> 
+    <div class="column2">
+      <div class="column-map">
+        <div class="card">
+          <h1>Map</h1>
+          <div class="map"> 
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>
