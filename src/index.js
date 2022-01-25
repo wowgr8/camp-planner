@@ -33,7 +33,6 @@ $(document).ready(function() {
   $('#location').submit(function(event) {
     event.preventDefault();
     let location=$('input#zipcode').val();
-    console.log(location);
     let lat, lon;
 
     WeatherService.getWeatherForecast(location)
