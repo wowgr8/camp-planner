@@ -5,6 +5,7 @@ Aesthetics
 
 APIs
 • mapbox - https://docs.mapbox.com/api/overview/
+• LocationIQ - https://locationiq.com/
 • recreation.gov - https://ridb.recreation.gov/landing
 • National Parks: https://www.nps.gov/subjects/digital/nps-data-api.htm
 • National Parks: https://www.nps.gov/subjects/developer/api-documentation.htm
