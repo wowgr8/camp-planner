@@ -450,3 +450,18 @@ a {
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
 }
+<<<<<<< HEAD
+=======
+
+.welcome {
+  text-align: center;
+  margin-top: 2%;
+  border: 5px solid orange;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 190, 248, 0.301);
+}
+>>>>>>> cesar

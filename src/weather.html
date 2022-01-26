@@ -8,40 +8,42 @@
 </head>
 
 <body>
-  
   <a href="./index.html" class="logo">CAMPY</a>
   <a href="./gear.html" class="nav_links">GEAR</a>
   <a href="./weather.html" class="nav_links">WEATHER & MAP</a>
   <!-- <a href="./map.html" class="nav_links">MAP</a> -->
   <a href="./meals.html" class="nav_links">MEALS</a>
   <a href="./about.html" class="nav_links">ABOUT</a>
-
-    
-  <div class="welcome">
-    <h1>Forecast</h1>
+  <div class="header">
+    <h1>Weather Forecast & Maps</h1>
+      <form class="welcome" id="location">
+        <label for="zipcode">Enter your destinations city and state:</label><br>
+        <input id="zipcode" type="text" style="width: 300px;"  placeholder="        ex : Portland, Oregon">
+        <button type="submit" class="btn-info" style="width: 200px;" id="forcastLocation">Get Forecast</button>
+      </form>
   </div>
-
-  <form id="location">
-    <div class="form-group">
-      <!-- <div class="container">
-        <div class="card"> -->
-          <h1>Where are you going?</h1>
-          <label for="zipcode">Enter your destinations city and state:</label>
-          <input id="zipcode" type="text" placeholder=" ex: Portland, Oregon">
-          <button type="submit" class="btn-success" id="forcastLocation">Get Forcast!</button>
-          <ul class="showForcast"></ul>
-        <!-- </div>
-      </div> -->
-  </div>
-  </form>
-
-  <div class="column-map">
-    <div class="card">
-      <h1>Map Time</h1>
-      <div class="map"> 
+  <div class="row">
+    <div class="column1">
+      <div class="form-group">
+          <div class="card">
+            <h1>Weather Forecast</h1>
+            <hr style="width:40%; margin: auto;">
+            <br>
+            <ul class="showForcast"></ul>
+          </div>       
+      </div>
+    </div>
+    <div class="column2">
+      <div class="column-map">
+        <div class="card">
+          <h1>Map</h1>
+          <hr style="width:40%; margin: auto;">
+          <br>
+          <div class="map"> 
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>
