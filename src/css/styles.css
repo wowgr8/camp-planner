@@ -445,7 +445,7 @@ a {
   margin-top: 2%;
   border: 5px solid orange;
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   color: white;
