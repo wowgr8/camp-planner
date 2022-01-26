@@ -70,6 +70,16 @@ h6 {
   font-weight: lighter;
 }
 
+h7 {
+  font-family: "Wooden Log";
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  color: rgb(255, 203, 143);
+  font-size: 30px;
+  font-weight: lighter;
+}
+
 /* .header1 {
   padding-top: 6%;
   padding-bottom: 10%;
@@ -81,7 +91,7 @@ h6 {
   float: left;
   width: 45%;
   padding: 0 10px;
-  margin-left: 3%;
+  margin-left: 4%;
   font-family: "National Park Regular";
   font-size: 20px;
   font-weight: lighter;
@@ -91,7 +101,7 @@ h6 {
   float: right;
   width: 45%;
   padding: 0 10px;
-  margin-right: 3%;
+  margin-right: 4%;
   font-family: "National Park Regular";
   font-size: 20px;
   font-weight: lighter;
@@ -340,7 +350,7 @@ a {
 }
 
 .tab.active {
-  background-color: rgb(0, 190, 248);;
+  background-color: rgb(0, 190, 248);
 }
 
 .tab:hover {
@@ -379,13 +389,14 @@ a {
   display: none;
 }
 
+
 .tabs__radio:checked + .tabs__label {
   font-weight: bold;
   color: rgb(0, 190, 248);
-  border-bottom: 2px solid rgb(0, 190, 248);;
+  border-bottom: 2px solid rgb(0, 190, 248);
 }
 
-.tabs__radio:checked + .tabs__label + .tabs__content { 
+.tabs__radio:checked + .tabs__label + .tabs__content {
   display: initial;
 }
 
@@ -435,7 +446,7 @@ a {
   transform: translateY(4px);
 }
 
-#emoji{
+#emoji {
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
 }
