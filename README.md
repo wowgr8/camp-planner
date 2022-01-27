@@ -102,7 +102,7 @@ _You will need to make an account and get an API key. The Free Trial version of 
 
 - _Navigate to the parent directory of your preference._
 
-- _Clone this project using `$ git clone https://github.com/johnwhittenstudio/camp-planner`_
+- _Clone this project using `$ git clone https://github.com/wowgr8/camp-planner`_
 
 - _Navigate to the top level of the directory with the command `$ cd camp-planner`_
 
