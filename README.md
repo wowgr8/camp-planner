@@ -6,6 +6,8 @@
 
 #### _Campy is a multi-html, dynamic web-based application wherein the user can organize a packing list, receive a weather forecast and a map for a specific inputted location, and search meal and cocktail recipes in order to plan for an upcoming camping trip._
 
+![](https://github.com/wowgr8/gifs-for-readmes/tree/main/campy-planner-gif)
+
 ## Technologies Used
 
 - _Babel 7.6.4_
